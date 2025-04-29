@@ -4,7 +4,7 @@ public class PracticeProblem {
 Student student2 = new Student("b", 1, "S2");
 Object item = new Object[]{null};
 
-System.out.println(student.equals(new Object[]{null}));
+System.out.println(student.equals("hello"));
 	}
 
 

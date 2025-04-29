@@ -30,13 +30,18 @@ public class Cow{
 
     @Override
     public boolean equals(Object obj){
-        Cow cow = (Cow) obj;
-        if (cow.getName().equals(this.name)&&cow.getAge()==this.age&&cow.getWeight()==this.weight){
-            return true;
+        try{
+            Cow cow = (Cow) obj; 
+            if (cow.getName().equals(this.name)&&cow.getAge()==this.age&&cow.getWeight()==this.weight){
+                return true;
+            }
+            else{
+                return false;
+            }
         }
-        else{
-            return false;
-        }
+            catch( Exception e){
+                return false;
+            }
 
     }
 }
