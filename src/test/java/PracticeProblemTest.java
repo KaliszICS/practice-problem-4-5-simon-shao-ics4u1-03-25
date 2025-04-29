@@ -137,7 +137,7 @@ public class PracticeProblemTest {
         } catch (NoSuchMethodException e) {
             fail("equals(Object) method does not exist in Cow class");
         } catch (Exception e) {
-            fail("Error testing equals(): " + e.getMessage());
+            fail("Error testing equals(): " + e);
         }
     }
     
