@@ -57,12 +57,16 @@ public class Student{
  */
     @Override
     public boolean equals(Object obj){
-        try{
-            Student student = (Student)obj;
-            return student.getStudentNumber().equals(this.studentNumber);
-        }
-       catch(Exception e){
-        return false;
-       }
+    try{
+        Student student = (Student)obj;
+    }
+   catch(Exception e){
+    return false;
+   }
+   Student student = (Student)obj;
+   if (obj==null){
+     return false;
+    }
+   return student.getStudentNumber().equals(this.studentNumber);
 }
 		}
