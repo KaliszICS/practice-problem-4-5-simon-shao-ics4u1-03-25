@@ -61,16 +61,21 @@ public class Cow{
     public boolean equals(Object obj){
         try{
             Cow cow = (Cow) obj; 
+
+        }
+            catch( Exception e){
+                return false;
+            }
+
+            if (obj==null){
+                return false;
+            }
+            Cow cow = (Cow) obj; 
             if (cow.getName().equals(this.name)&&cow.getAge()==this.age&&cow.getWeight()==this.weight){
                 return true;
             }
             else{
                 return false;
             }
-        }
-            catch( Exception e){
-                return false;
-            }
-
     }
 }
